@@ -23,13 +23,5 @@ public class Footballer {
         this.name = name;
     }
 
-     public  Footballer find(int number) throws FootballerExcep {
-        if (number == 22) {
-            System.out.println("Oyuncu eşleşti");
-            return new Footballer(22, "Ozan Özcan");
-        } else {
-            throw new FootballerExcep("Futbolcu bulunamadı.");
-        }
 
-    }
 }
