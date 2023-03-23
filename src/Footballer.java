@@ -28,7 +28,7 @@ public class Footballer {
             System.out.println("Oyuncu eşleşti");
             return new Footballer(+22, "Ozan Özcan");
         } else {
-            throw new FootballerExcep("Aradığınız futbolcu eşleşmiyor.");
+            throw new FootballerExcep("Futbolcu bulunamadı.");
         }
 
     }
