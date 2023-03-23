@@ -23,11 +23,12 @@ public class Footballer {
         this.name = name;
     }
 
-    public static Footballer find(int number) throws FootballerExcep {
+     public  Footballer find(int number) throws FootballerExcep {
         if (number == 22) {
-            return new Footballer(22, "Ozan Özcan");
+            System.out.println("Oyuncu eşleşti");
+            return new Footballer(+22, "Ozan Özcan");
         } else {
-            throw new FootballerExcep("Futbolcu  Bulunamadı");
+            throw new FootballerExcep("Aradığınız futbolcu eşleşmiyor.");
         }
 
     }

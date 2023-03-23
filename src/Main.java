@@ -1,12 +1,13 @@
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FootballerExcep {
+        Footballer s =new Footballer(22,"Ozan Özcan");
 
-        Footballer s = null;
 
+        System.out.println("Futbolcu = "+ s.getName()+" "+s.getNumber());
         try {
-            s = Footballer.find(23);
-            System.out.println("Number : " + s.getNumber());
+            Footballer footballer = s.find(s.number=22);
+            System.out.println("Number : "+s.getNumber());
             System.out.println("Name : " + s.getName());
         } catch (FootballerExcep e) {
             System.out.println(e.getMessage());
